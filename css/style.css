@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Base styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: linear-gradient(180deg, #0A192F 0%, #0F2D3D 100%);
+  min-height: 100vh;
+}
+
+/* Custom gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #00BFA5 0%, #26A69A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: #00BFA5; /* Fallback for browsers that don't support background-clip */
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.3s ease;
+  background: rgba(15, 45, 61, 0.6);
+  border: 1px solid rgba(45, 55, 72, 0.5);
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 191, 165, 0.3);
+}
+
+/* Accordion styles */
+.accordion-item {
+  border-bottom: 1px solid #2D3748;
+  background: rgba(15, 45, 61, 0.6);
+}
+
+.accordion-button {
+  transition: all 0.3s ease;
+  background: rgba(15, 45, 61, 0.8);
+}
+
+.accordion-button:hover {
+  background-color: rgba(0, 191, 165, 0.1);
+}
+
+/* Process section */
+.process-step {
+  position: relative;
+}
+
+.process-step::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(90deg, #00BFA5 0%, transparent 100%);
+  transform: translateY(-50%);
+}
+
+.process-step:last-child::after {
+  display: none;
+}
+
+/* Custom background gradients */
+.bg-gradient-dark {
+  background: linear-gradient(135deg, #0A192F 0%, #0F2D3D 100%);
+}
+
+.bg-gradient-teal {
+  background: linear-gradient(135deg, #00BFA5 0%, #26A69A 100%);
+}
+
+/* Price section specific gradient */
+.price-section {
+  background: linear-gradient(135deg, #00BFA5 0%, #26A69A 50%, #1E88E5 100%);
+}
+
+/* Custom colors */
+.text-bright-teal {
+  color: #00BFA5;
+}
+
+.text-light-gray {
+  color: #A0AEC0;
+}
+
+.bg-dark-blue {
+  background-color: #0A192F;
+}
+
+.bg-dark-teal {
+  background-color: rgba(15, 45, 61, 0.8);
+}
+
+.bg-bright-teal {
+  background-color: #00BFA5;
+}
+
+.border-dark-gray {
+  border-color: #2D3748;
+}
+
+.border-bright-teal {
+  border-color: #00BFA5;
+}
+
+/* Header styles */
+header {
+  position: relative;
+  z-index: 10;
+}
+
+
+
+/* CCNA card styles */
+.ccna-card {
+  background: rgba(15, 45, 61, 0.6);
+  border: 1px solid #00BFA5;
+}
+
+/* Button styles */
+.btn-primary {
+  background: linear-gradient(135deg, #00BFA5 0%, #26A69A 100%);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: white;
+  color: #00BFA5;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #f8f9fa;
+  transform: translateY(-2px);
+}
+
+/* CTA section styles */
+.cta-section {
+  background: linear-gradient(135deg, #00BFA5 0%, #26A69A 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: skewX(-15deg);
+  transform-origin: top right;
+}
+
+/* Feature icons */
+.feature-icon {
+  background: linear-gradient(135deg, #00BFA5 0%, #26A69A 100%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .process-step::after {
+    display: none;
+  }
+  
+  .cta-section::before {
+    width: 30%;
+    transform: skewX(-10deg);
+  }
+}
+
+/* Animation classes */
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Smooth transitions */
+* {
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+

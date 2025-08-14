@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Custom styles */
+.gradient-text {
+  background: linear-gradient(135deg, #00BFA5 0%, #26A69A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 191, 165, 0.1);
+}
+
+.accordion-item {
+  border-bottom: 1px solid #2D3748;
+}
+
+.accordion-button {
+  transition: all 0.3s ease;
+}
+
+.accordion-button:hover {
+  background-color: rgba(0, 191, 165, 0.1);
+}
+
+.process-step {
+  position: relative;
+}
+
+.process-step::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(90deg, #00BFA5 0%, transparent 100%);
+  transform: translateY(-50%);
+}
+
+.process-step:last-child::after {
+  display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .process-step::after {
+    display: none;
+  }
+}
+
