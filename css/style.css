@@ -3,6 +3,7 @@
 /* Base styles */
 * {
   box-sizing: border-box;
+  animation: none !important
 }
 
 body {
@@ -17,7 +18,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: #00BFA5; /* Fallback for browsers that don't support background-clip */
+  color: #00BFA5;
 }
 
 /* Card hover effects */
@@ -180,25 +181,3 @@ header {
     transform: skewX(-10deg);
   }
 }
-
-/* Animation classes */
-.animate-fade-in {
-  animation: fadeIn 0.6s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Smooth transitions */
-* {
-  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
-}
-
