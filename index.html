@@ -32,6 +32,305 @@
       };
     </script>
   </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+    /* Base styles */
+    * {
+      box-sizing: border-box;
+      animation: none !important;
+    }
+
+    body {
+      font-family: "Inter", system-ui, sans-serif;
+      background: linear-gradient(180deg, #0a192f 0%, #0f2d3d 100%);
+      min-height: 100vh;
+    }
+
+    /* Custom gradient text */
+    .gradient-text {
+      background: linear-gradient(135deg, #00bfa5 0%, #26a69a 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: #00bfa5;
+    }
+
+    /* Card hover effects */
+    .card-hover {
+      transition: all 0.3s ease;
+      background: rgba(15, 45, 61, 0.6);
+      border: 1px solid rgba(45, 55, 72, 0.5);
+    }
+
+    .card-hover:hover {
+      transform: translateY(-5px);
+      border-color: rgba(0, 191, 165, 0.3);
+    }
+
+    /* Accordion styles */
+    .accordion-item {
+      border-bottom: 1px solid #2d3748;
+      background: rgba(15, 45, 61, 0.6);
+    }
+
+    .accordion-button {
+      transition: all 0.3s ease;
+      background: rgba(15, 45, 61, 0.8);
+    }
+
+    .accordion-button:hover {
+      background-color: rgba(0, 191, 165, 0.1);
+    }
+
+    /* Process section */
+    .process-step {
+      position: relative;
+    }
+
+    .process-step::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -50px;
+      width: 100px;
+      height: 2px;
+      background: linear-gradient(90deg, #00bfa5 0%, transparent 100%);
+      transform: translateY(-50%);
+    }
+
+    .process-step:last-child::after {
+      display: none;
+    }
+
+    /* Custom background gradients */
+    .bg-gradient-dark {
+      background: linear-gradient(135deg, #0a192f 0%, #0f2d3d 100%);
+    }
+
+    .bg-gradient-teal {
+      background: linear-gradient(135deg, #00bfa5 0%, #26a69a 100%);
+    }
+
+    /* Price section specific gradient */
+    .price-section {
+      background: linear-gradient(
+        135deg,
+        #00bfa5 0%,
+        #26a69a 50%,
+        #1e88e5 100%
+      );
+    }
+
+    /* Custom colors */
+    .text-bright-teal {
+      color: #00bfa5;
+    }
+
+    .text-light-gray {
+      color: #a0aec0;
+    }
+
+    .bg-dark-blue {
+      background-color: #0a192f;
+    }
+
+    .bg-dark-teal {
+      background-color: rgba(15, 45, 61, 0.8);
+    }
+
+    .bg-bright-teal {
+      background-color: #00bfa5;
+    }
+
+    .border-dark-gray {
+      border-color: #2d3748;
+    }
+
+    .border-bright-teal {
+      border-color: #00bfa5;
+    }
+
+    /* Header styles */
+    header {
+      position: relative;
+      z-index: 10;
+    }
+
+    /* CCNA card styles */
+    .ccna-card {
+      background: rgba(15, 45, 61, 0.6);
+      border: 1px solid #00bfa5;
+    }
+
+    /* Button styles */
+    .btn-primary {
+      background: linear-gradient(135deg, #00bfa5 0%, #26a69a 100%);
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: white;
+      color: #00bfa5;
+      transition: all 0.3s ease;
+    }
+
+    .btn-secondary:hover {
+      background: #f8f9fa;
+      transform: translateY(-2px);
+    }
+
+    /* CTA section styles */
+    .cta-section {
+      background: linear-gradient(135deg, #00bfa5 0%, #26a69a 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      transform: skewX(-15deg);
+      transform-origin: top right;
+    }
+
+    /* Feature icons */
+    .feature-icon {
+      background: linear-gradient(135deg, #00bfa5 0%, #26a69a 100%);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 1024px) {
+      .ccna-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+      }
+
+      .ccna-card img {
+        margin-bottom: 1rem;
+      }
+
+      .hero-section h1 {
+        font-size: 2.5rem;
+        line-height: 1.3;
+      }
+
+      .hero-section p {
+        font-size: 0.95rem;
+      }
+
+      .process-step::after {
+        display: none;
+      }
+
+      .price-section h2 {
+        font-size: 1.8rem;
+      }
+
+      .price-section span {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .cta-section::before {
+        width: 30%;
+        transform: skewX(-10deg);
+      }
+
+      .hero-section h1 {
+        font-size: 2rem;
+      }
+
+      .hero-section p {
+        font-size: 0.875rem;
+      }
+
+      .card-hover {
+        padding: 1.5rem;
+      }
+
+      .feature-icon {
+        width: 10;
+        height: 10;
+      }
+
+      .process-step::after {
+        display: none;
+      }
+
+      .cta-section h1 {
+        font-size: 1.5rem;
+      }
+
+      .cta-section button {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.95rem;
+      }
+    }
+    /* Custom styles for the gradient */
+    .gradient-bg {
+      background: linear-gradient(135deg, #00bfa5 0%, #26a69a 100%);
+    }
+
+    .gradient-button {
+      background: linear-gradient(135deg, #00bfa5 0%, #26a69a 100%);
+    }
+
+    /* Desktop styles (default) */
+    .desktop-card {
+      background: linear-gradient(135deg, #00bfa5 0%, #26a69a 100%);
+    }
+
+    .desktop-white-section {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 28% 100%);
+    }
+
+    /* Mobile styles */
+    @media (max-width: 768px) {
+      .mobile-card {
+        background: white !important;
+      }
+
+      .mobile-text {
+        color: #00bfa5 !important;
+      }
+
+      .mobile-white-section {
+        display: none;
+      }
+
+      .mobile-button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+      }
+
+      .mobile-button {
+        background: #00bfa5 !important;
+        color: white !important;
+        padding: 0.75rem 1.5rem !important;
+        font-size: 1rem !important;
+      }
+    }
+
+    /* Hide mobile button on desktop */
+    @media (min-width: 769px) {
+      .mobile-button-container {
+        display: none;
+      }
+    }
+  </style>
   <body
     class="font-sans bg-dark-blue text-white"
     style="background-image: url(./images/BG.png)"
@@ -246,14 +545,6 @@
             </p>
           </div>
         </div>
-
-        <div class="text-center mt-12">
-          <button
-            class="btn-primary text-white px-8 py-4 rounded-lg font-semibold text-lg"
-          >
-            <i class="fa-solid fa-play"></i> VER NA PRÁTICA
-          </button>
-        </div>
       </div>
     </section>
 
@@ -417,35 +708,43 @@
       <div class="container mx-auto max-w-5xl relative z-10">
         <!-- Call to Action Card -->
         <div
-          class="relative rounded-3xl shadow-2xl overflow-hidden mb-20 h-64"
-          style="background: linear-gradient(135deg, #00bfa5 0%, #26a69a 100%)"
+          class="relative rounded-3xl shadow-2xl overflow-hidden mb-20 h-64 md:h-64 desktop-card mobile-card"
         >
-          <!-- Background verde que ocupa toda a área -->
+          <!-- Background verde que ocupa toda a área (apenas desktop) -->
           <div
-            class="absolute inset-0 bg-gradient-to-r from-bright-teal to-teal-600"
+            class="absolute inset-0 bg-gradient-to-r from-bright-teal to-teal-600 md:block hidden"
           ></div>
 
           <!-- Conteúdo do lado esquerdo -->
-          <div class="relative z-10 p-12 lg:p-16 max-w-2xl">
-            <h1 class="text-4xl lg:text-3xl font-bold text-white leading-tight">
+          <div
+            class="relative z-10 p-8 md:p-12 lg:p-16 max-w-full md:max-w-2xl"
+          >
+            <h1
+              class="text-2xl md:text-4xl lg:text-3xl font-bold text-white md:text-white mobile-text leading-tight"
+            >
               Torna-te um Especialista em <br />
               Redes com o CCNA <br />
               Aprendendo do Jeito ✓
             </h1>
+
+            <!-- Botão mobile (visível apenas em telas pequenas) -->
+            <div class="mobile-button-container md:hidden">
+              <button
+                class="mobile-button bg-gradient-to-r from-bright-teal to-teal-600 text-white px-6 py-3 rounded-xl font-bold text-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+              >
+                INSCREVER-SE AGORA
+              </button>
+            </div>
           </div>
 
-          <!-- Área branca com corte diagonal inclinado -->
+          <!-- Área branca com corte diagonal inclinado (apenas desktop) -->
           <div
-            class="absolute top-0 right-0 h-full w-96 bg-white"
-            style="clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 28% 100%)"
+            class="absolute top-0 right-0 h-full w-96 bg-white desktop-white-section mobile-white-section hidden md:block"
           >
             <!-- Container interno para alinhar o botão -->
             <div class="flex items-center justify-center h-full p-12 lg:p-16">
               <button
-                class="bg-gradient-to-r from-bright-teal to-teal-600 text-white px-4 py-4 rounded-xl font-bold text-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
-                style="
-                  background: linear-gradient(135deg, #00bfa5 0%, #26a69a 100%);
-                "
+                class="gradient-button text-white px-4 py-4 rounded-xl font-bold text-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
               >
                 INSCREVER-SE AGORA
               </button>
@@ -453,7 +752,6 @@
           </div>
         </div>
       </div>
-          
     </section>
 
     <!-- FAQ Section -->
