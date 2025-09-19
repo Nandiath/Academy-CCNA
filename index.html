@@ -331,80 +331,80 @@
       }
     }
 
-
-      /* padrão (desktop) */
-  .line-connector {
-    width: 33%;
-  }
-
-  /* apenas tablets (entre 768px e 1023px) */
-  @media (min-width: 768px) and (max-width: 1023px) {
+    /* padrão (desktop) */
     .line-connector {
-      width: 80px; /* ajuste aqui o tamanho menor desejado */
+      width: 33%;
     }
-  }
+
+    /* apenas tablets (entre 768px e 1023px) */
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .line-connector {
+        width: 80px; /* ajuste aqui o tamanho menor desejado */
+      }
+    }
   </style>
   <body
     class="font-sans bg-dark-blue text-white"
     style="background-image: url(./images/BG.png)"
   >
     <!-- Hero Section -->
-    <section class="hero-section py-16 px-4 md:px-8">
-      <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        <div class="px-4 sm:px-6">
-  <div class="max-w-7xl mx-auto">
-    <!-- Logo centralizado em telas pequenas -->
-    <div class="flex justify-center md:justify-start">
-      <img
-        src="images/logo.png"
-        alt="MECHANICAL"
-        class="h-8 md:h-16 mb-4"
-      />
+<section class="hero-section py-16 px-4 md:px-8">
+  <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <div class="px-4 sm:px-6">
+      <div class="max-w-7xl mx-auto">
+        <!-- Logo -->
+        <div class="flex justify-center md:justify-start">
+          <img
+            src="images/logo.png"
+            alt="MECHANICAL"
+            class="h-8 md:h-16 mb-4"
+          />
+        </div>
+
+        <!-- Título maior -->
+        <h1
+          class="text-3xl md:text-4xl font-bold leading-snug mb-6 text-center md:text-left max-w-3xl mx-auto md:mx-0"
+        >
+          Torne-se um <span class="gradient-text">Especialista em Redes</span><br />
+          com o Programa CCNA
+        </h1>
+
+        <!-- Descrição em maiúsculas e mais curta -->
+        <p
+          class="text-light-gray text-base mb-8 leading-relaxed text-center md:text-left max-w-2xl mx-auto md:mx-0"
+        >
+          O <strong>CCNA</strong> valida suas habilidades em REDES DE COMPUTADORES.<br />
+          Planeje e configure LAN e WAN, domine IPV4 e IPV6,<br />
+          e trabalhe com SWITCHES, ROTEADORES e FIREWALLS CISCO.
+        </p>
+      </div>
     </div>
 
-    <!-- Título centralizado em mobile/tablet -->
-    <h1
-      class="text-xl md:text-5xl lg:text-5xl font-bold leading-tight mb-6 
-             text-center md:text-left max-w-3xl mx-auto md:mx-0"
-    >
-      Se livre do looping de projetos baratos
-      <br />e
-      <span class="gradient-text">fature alto todos os meses</span>
-    </h1>
-
-    <!-- Descrição centralizada em mobile/tablet -->
-    <p
-      class="text-light-gray text-base mb-8 leading-relaxed 
-             text-center md:text-left max-w-2xl mx-auto md:mx-0"
-    >
-      Domine as principais tecnologias de redes, desenvolvendo e
-      profissionais da internet como você! Que querem construir carreira
-      ou seu negócio prestando serviços profissionais na área de redes.
-    </p>
-  </div>
-</div>
-
-        <div class="flex justify-center">
-          <div
-            class="ccna-card rounded-lg px-20 py-28 max-w w-full flex items-center space-x-6"
-          >
-            <div class="flex items-center justify-center">
-              <img
-                src="images/y5KHF0AzqmAQ.jpg"
-                alt="CCNA Certification"
-                class="w-32 sm:w-44 md:w-32 rounded-lg object-cover"
-              />
-            </div>
-            <div class="py-2">
-              <h3 class="text-xl font-extrabold mb-2 gradient-text">
-                CCNA 200-301
-              </h3>
-              <p class="text-sm text-base">Rede de Computadores</p>
-            </div>
-          </div>
+    <!-- Card CCNA mantido -->
+    <div class="flex justify-center">
+      <div
+        class="ccna-card rounded-lg px-20 py-28 max-w w-full flex items-center space-x-6"
+      >
+        <div class="flex items-center justify-center">
+          <img
+            src="images/y5KHF0AzqmAQ.jpg"
+            alt="CCNA Certification"
+            class="w-32 sm:w-44 md:w-32 rounded-lg object-cover"
+          />
+        </div>
+        <div class="py-2">
+          <h3 class="text-xl font-extrabold mb-2 gradient-text">
+            CCNA 200-301
+          </h3>
+          <p class="text-sm text-base">Rede de Computadores</p>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
+
+
 
     <!-- Price Section -->
     <section class="price-section py-16 px-4 md:px-8">
@@ -416,273 +416,326 @@
       </div>
     </section>
 
-    <!-- What You'll Learn Section -->
-    <section class="py-16 px-4 md:px-8">
-      <div class="max-w-5xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
-          O que Você <span class="gradient-text">Vai Aprender?</span>
-        </h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Feature Cards -->
-          <div class="card-hover rounded-lg p-6">
-            <div
-              class="feature-icon w-12 h-12 rounded-lg flex items-center justify-center mb-4"
-            >
-              <svg
-                class="w-6 h-6 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
-                ></path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Fundamentos de Redes</h3>
-            <p class="text-light-gray">
-              Aprenda os conceitos básicos de redes de computadores.
-            </p>
-          </div>
-
-          <div class="card-hover rounded-lg p-6">
-            <div
-              class="feature-icon w-12 h-12 rounded-lg flex items-center justify-center mb-4"
-            >
-              <svg
-                class="w-6 h-6 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                ></path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Protocolos e Sub-redes</h3>
-            <p class="text-light-gray">
-              Domine os protocolos de rede e configuração de sub-redes.
-            </p>
-          </div>
-
-          <div class="card-hover rounded-lg p-6">
-            <div
-              class="feature-icon w-12 h-12 rounded-lg flex items-center justify-center mb-4"
-            >
-              <svg
-                class="w-6 h-6 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
-                ></path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Roteadores e Switches</h3>
-            <p class="text-light-gray">
-              Configure e gerencie equipamentos de rede profissionais.
-            </p>
-          </div>
-
-          <div class="card-hover rounded-lg p-6">
-            <div
-              class="feature-icon w-12 h-12 rounded-lg flex items-center justify-center mb-4"
-            >
-              <svg
-                class="w-6 h-6 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                ></path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Segurança e VLANs</h3>
-            <p class="text-light-gray">
-              Implemente segurança e configure VLANs avançadas.
-            </p>
-          </div>
-
-          <div class="card-hover rounded-lg p-6">
-            <div
-              class="feature-icon w-12 h-12 rounded-lg flex items-center justify-center mb-4"
-            >
-              <svg
-                class="w-6 h-6 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                ></path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Exames de CCNA</h3>
-            <p class="text-light-gray">
-              Prepare-se para a certificação CCNA oficial.
-            </p>
-          </div>
-
-          <div class="card-hover rounded-lg p-6">
-            <div
-              class="feature-icon w-12 h-12 rounded-lg flex items-center justify-center mb-4"
-            >
-              <svg
-                class="w-6 h-6 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"
-                ></path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Wireless e WAN</h3>
-            <p class="text-light-gray">
-              Configure redes sem fio e conexões WAN.
-            </p>
-          </div>
+   <!-- What You'll Learn Section -->
+<section class="py-16 px-4 md:px-8">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+      O que Você <span class="gradient-text">Vai Aprender?</span>
+    </h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- 12 Feature Cards -->
+      <div class="card-hover rounded-lg p-6">
+        <div class="feature-icon w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+          <!-- SVG Mantido -->
+          <svg class="w-8 h-8 text-white" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 1a6.5 6.5 0 1 1 0 13 6.5 6.5 0 0 1 0-13zm4.894 4a5.527 5.527 0 0 0-3.053-2.676c.444.84.765 1.74.953 2.676h2.1zm.582 2.995A5.11 5.11 0 0 0 14 7.5a5.464 5.464 0 0 0-.213-1.5h-2.342c.032.331.055.664.055 1a10.114 10.114 0 0 1-.206 2h2.493c.095-.329.158-.665.19-1.005zm-3.535 0l.006-.051A9.04 9.04 0 0 0 10.5 7a8.994 8.994 0 0 0-.076-1H6.576A8.82 8.82 0 0 0 6.5 7a8.98 8.98 0 0 0 .233 2h3.534c.077-.332.135-.667.174-1.005zM10.249 5a8.974 8.974 0 0 0-1.255-2.97C8.83 2.016 8.666 2 8.5 2a3.62 3.62 0 0 0-.312.015l-.182.015L8 2.04A8.97 8.97 0 0 0 6.751 5h3.498zM5.706 5a9.959 9.959 0 0 1 .966-2.681A5.527 5.527 0 0 0 3.606 5h2.1zM3.213 6A5.48 5.48 0 0 0 3 7.5 5.48 5.48 0 0 0 3.213 9h2.493A10.016 10.016 0 0 1 5.5 7c0-.336.023-.669.055-1H3.213zm2.754 4h-2.36a5.515 5.515 0 0 0 3.819 2.893A10.023 10.023 0 0 1 5.967 10zM8.5 12.644A8.942 8.942 0 0 0 9.978 10H7.022A8.943 8.943 0 0 0 8.5 12.644zM11.033 10a10.024 10.024 0 0 1-1.459 2.893A5.517 5.517 0 0 0 13.393 10h-2.36z"/>
+          </svg>
         </div>
+        <h3 class="text-xl font-semibold mb-2">Fundamentos de Redes</h3>
+        <p class="text-light-gray">
+          Tipos de redes, cabeamento, OSI, TCP/IP e protocolos TCP/UDP.
+        </p>
       </div>
-    </section>
+
+      <div class="card-hover rounded-lg p-6">
+        <div class="feature-icon w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-8 h-8 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
+    <path d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7z"/>
+    <circle cx="12" cy="9" r="2.5"/>
+  </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Endereçamento IP</h3>
+        <p class="text-light-gray">
+          IPv4 e IPv6, endereços privados e públicos, VLSM e FLSM.
+        </p>
+      </div>
+
+      <div class="card-hover rounded-lg p-6">
+        <div class="feature-icon w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-8 h-8 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
+    <!-- Corpo do plugue -->
+    <rect x="6" y="8" width="12" height="8" rx="2"/>
+    <!-- Pinos do plugue -->
+    <line x1="9" y1="8" x2="9" y2="6"/>
+    <line x1="15" y1="8" x2="15" y2="6"/>
+    <!-- Cabo -->
+    <line x1="12" y1="16" x2="12" y2="20"/>
+  </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Equipamentos em LAN</h3>
+        <p class="text-light-gray">
+          Switches, redes cabeadas e sem fio, domínios de colisão e broadcast.
+        </p>
+      </div>
+
+      <div class="card-hover rounded-lg p-6">
+        <div class="feature-icon w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-8 h-8 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
+    <!-- Seta diagonal superior esquerda → inferior direita -->
+    <line x1="4" y1="4" x2="20" y2="20"/>
+    <polygon points="20,20 16,20 20,16"/>
+    
+    <!-- Seta diagonal inferior esquerda → superior direita -->
+    <line x1="4" y1="20" x2="20" y2="4"/>
+    <polygon points="20,4 20,8 16,4"/>
+  </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Tecnologias de Comutação</h3>
+        <p class="text-light-gray">
+          VLANs, STP, EtherChannel, Cisco Packet Tracer e segurança em redes.
+        </p>
+      </div>
+
+      <div class="card-hover rounded-lg p-6">
+        <div class="feature-icon w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-8 h-8 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
+    <!-- Barra 1 -->
+    <line x1="6" y1="18" x2="6" y2="14"/>
+    <!-- Barra 2 -->
+    <line x1="10" y1="18" x2="10" y2="12"/>
+    <!-- Barra 3 -->
+    <line x1="14" y1="18" x2="14" y2="10"/>
+    <!-- Barra 4 -->
+    <line x1="18" y1="18" x2="18" y2="8"/>
+  </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Roteadores Cisco</h3>
+        <p class="text-light-gray">
+          Tabelas de roteamento, Router on a Stick, Switch L3 e DHCP.
+        </p>
+      </div>
+
+      <div class="card-hover rounded-lg p-6">
+        <div class="feature-icon w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-8 h-8 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
+    <!-- Cabeça do alfinete -->
+    <circle cx="12" cy="7" r="3"/>
+    <!-- Corpo do alfinete -->
+    <line x1="12" y1="10" x2="12" y2="20"/>
+  </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Roteamento Estático</h3>
+        <p class="text-light-gray">
+          Conceitos de IGP e EGP, rotas padrão, IPv4 e IPv6.
+        </p>
+      </div>
+
+      <div class="card-hover rounded-lg p-6">
+        <div class="feature-icon w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-8 h-8 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
+    <!-- Círculo externo -->
+    <circle cx="12" cy="12" r="10"/>
+    <!-- Agulha da bússola -->
+    <line x1="12" y1="12" x2="16" y2="8"/>
+    <line x1="12" y1="12" x2="8" y2="16"/>
+    <!-- Pontos cardeais (opcional) -->
+    <line x1="12" y1="2" x2="12" y2="6"/>
+    <line x1="12" y1="18" x2="12" y2="22"/>
+    <line x1="2" y1="12" x2="6" y2="12"/>
+    <line x1="18" y1="12" x2="22" y2="12"/>
+  </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Roteamento Dinâmico</h3>
+        <p class="text-light-gray">
+          RIP, OSPFv2/v3, EIGRP e protocolos de redundância (FHRP).
+        </p>
+      </div>
+
+      <div class="card-hover rounded-lg p-6">
+        <div class="feature-icon w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-8 h-8 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
+    <!-- Engrenagem -->
+    <path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 .87l-.34.58a2 2 0 1 1-3.46 0l-.34-.58a1.65 1.65 0 0 0-1-.87 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-.87-1l-.58-.34a2 2 0 1 1 0-3.46l.58-.34a1.65 1.65 0 0 0 .87-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0a1.65 1.65 0 0 0 1-.87l.34-.58a2 2 0 1 1 3.46 0l.34.58a1.65 1.65 0 0 0 1 .87h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 .87 1l.58.34a2 2 0 1 1 0 3.46l-.58.34a1.65 1.65 0 0 0-.87 1z"/>
+  </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Serviços IP</h3>
+        <p class="text-light-gray">
+          NAT, DNS, DHCPv6, SNMP, Telnet, SSH, QoS e serviços diferenciados.
+        </p>
+      </div>
+
+      <div class="card-hover rounded-lg p-6">
+        <div class="feature-icon w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-8 h-8 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
+    <!-- Corpo do cadeado -->
+    <rect x="6" y="10" width="12" height="10" rx="2"/>
+    <!-- Arco do cadeado -->
+    <path d="M9 10V7a3 3 0 0 1 6 0v3"/>
+  </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Segurança</h3>
+        <p class="text-light-gray">
+          Ameaças, AAA, políticas de segurança e protocolos da camada 2.
+        </p>
+      </div>
+
+      <div class="card-hover rounded-lg p-6">
+        <div class="feature-icon w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-8 h-8 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
+    <!-- Primeiro item -->
+    <line x1="8" y1="6" x2="20" y2="6"/>
+    <circle cx="4" cy="6" r="1"/>
+    
+    <!-- Segundo item -->
+    <line x1="8" y1="12" x2="20" y2="12"/>
+    <circle cx="4" cy="12" r="1"/>
+    
+    <!-- Terceiro item -->
+    <line x1="8" y1="18" x2="20" y2="18"/>
+    <circle cx="4" cy="18" r="1"/>
+  </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Listas de Acesso (ACL)</h3>
+        <p class="text-light-gray">
+          ACLs normais e estendidas, IPv4 e IPv6, segurança em WLAN.
+        </p>
+      </div>
+
+      <div class="card-hover rounded-lg p-6">
+        <div class="feature-icon w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-8 h-8 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
+    <!-- Cadeado fechado -->
+    <rect x="6" y="10" width="12" height="10" rx="2"/>
+    <path d="M9 10V7a3 3 0 0 1 6 0v3"/>
+    <!-- Chave -->
+    <line x1="16" y1="16" x2="20" y2="20"/>
+    <circle cx="20" cy="20" r="1"/>
+  </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Redes WAN e VPNs</h3>
+        <p class="text-light-gray">
+          Roteamento WAN, BGP, VPN site-to-site e computação em nuvem.
+        </p>
+      </div>
+
+      <div class="card-hover rounded-lg p-6">
+        <div class="feature-icon w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-8 h-8 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
+    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+  </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Automação em Redes</h3>
+        <p class="text-light-gray">
+          JSON, Cisco DNA, troubleshooting, documentação e gestão de redes.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Why Take This Course Section -->
-    <section class="py-16 px-4 md:px-8">
-      <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <h2 class="text-3xl md:text-4xl font-bold mb-8">
-            Porquê Fazer <span class="gradient-text">Esse Curso?</span>
-          </h2>
-          <ul class="space-y-4 mb-8">
-            <li class="flex items-start">
-              <div
-                class="w-2 h-2 bg-bright-teal rounded-full mt-2 mr-3 flex-shrink-0"
-              ></div>
-              <span class="text-light"
-                >Instrutores Certificados Cisco (CCNA/CCNP)</span
-              >
-            </li>
-            <li class="flex items-start">
-              <div
-                class="w-2 h-2 bg-bright-teal rounded-full mt-2 mr-3 flex-shrink-0"
-              ></div>
-              <span class="text-light"
-                >Laboratórios Práticos com Equipamentos Reais</span
-              >
-            </li>
-            <li class="flex items-start">
-              <div
-                class="w-2 h-2 bg-bright-teal rounded-full mt-2 mr-3 flex-shrink-0"
-              ></div>
-              <span class="text-light">Material Didático Atualizado</span>
-            </li>
-            <li class="flex items-start">
-              <div
-                class="w-2 h-2 bg-bright-teal rounded-full mt-2 mr-3 flex-shrink-0"
-              ></div>
-              <span class="text-light">Simulados para o Exame CCNA</span>
-            </li>
-            <li class="flex items-start">
-              <div
-                class="w-2 h-2 bg-bright-teal rounded-full mt-2 mr-3 flex-shrink-0"
-              ></div>
-              <span class="text-light">Suporte Pós-Certificação</span>
-            </li>
-            <li class="flex items-start">
-              <div
-                class="w-2 h-2 bg-bright-teal rounded-full mt-2 mr-3 flex-shrink-0"
-              ></div>
-              <span class="text-light">Acesso a Oportunidades Cisco</span>
-            </li>
-          </ul>
-          <button
-            class="btn-primary text-white px-8 py-4 rounded-lg font-semibold text-lg"
-          >
-            INSCREVER-SE AGORA
-          </button>
-        </div>
-        <div>
-          <div class="grid grid-cols-3 gap-4 max-w-md mx-auto">
-            <!-- Duas imagens em cima -->
-            <div class="col-span-1">
-              <img
-                src="./images/cisco.jpg"
-                alt="Network Setup"
-                class="w-full h-36 object-cover rounded-xl hover-lift shadow-lg"
-              />
-            </div>
-            <div class="col-span-1">
-              <img
-                src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=200&h=150&fit=crop"
-                alt="Server Room"
-                class="w-full h-36 object-cover rounded-xl hover-lift shadow-lg"
-              />
-            </div>
-
-            <!-- Imagem vertical do lado direito -->
-            <div class="col-span-1 row-span-2">
-              <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=320&fit=crop"
-                alt="Data Center Vertical"
-                class="w-full h-72 object-cover rounded-xl hover-lift shadow-lg"
-              />
-            </div>
-
-            <!-- Duas imagens em baixo -->
-            <div class="col-span-1">
-              <img
-                src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=200&h=150&fit=crop"
-                alt="Network Monitoring"
-                class="w-full h-32 object-cover rounded-xl hover-lift shadow-lg"
-              />
-            </div>
-            <div class="col-span-1">
-              <img
-                src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=200&h=150&fit=crop"
-                alt="IT Professional"
-                class="w-full h-32 object-cover rounded-xl hover-lift shadow-lg"
-              />
-            </div>
-          </div>
-
-          <!-- Overlay decorativo -->
+<section class="py-16 px-4 md:px-8">
+  <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">
+        Porquê Fazer <span class="gradient-text">Esse Curso?</span>
+      </h2>
+      <ul class="space-y-4 mb-8">
+        <li class="flex items-start">
           <div
-            class="absolute inset-0 bg-gradient-to-r from-teal-500/5 to-blue-500/5 rounded-2xl blur-3xl -z-10"
+            class="w-2 h-2 bg-bright-teal rounded-full mt-2 mr-3 flex-shrink-0"
           ></div>
+          <span class="text-light"
+            >Domínio de redes LAN e WAN de médio e grande porte</span
+          >
+        </li>
+        <li class="flex items-start">
+          <div
+            class="w-2 h-2 bg-bright-teal rounded-full mt-2 mr-3 flex-shrink-0"
+          ></div>
+          <span class="text-light"
+            >Capacidade de planeamento de sub-redes com endereçamento IPv4 e IPv6</span
+          >
+        </li>
+        <li class="flex items-start">
+          <div
+            class="w-2 h-2 bg-bright-teal rounded-full mt-2 mr-3 flex-shrink-0"
+          ></div>
+          <span class="text-light">Instalação e configuração de redes com Switches, Roteadores, Servidores e Firewalls</span>
+        </li>
+        <li class="flex items-start">
+          <div
+            class="w-2 h-2 bg-bright-teal rounded-full mt-2 mr-3 flex-shrink-0"
+          ></div>
+          <span class="text-light">Implementação de mecanismos de segurança e recursos de Firewalls</span>
+        </li>
+        <li class="flex items-start">
+          <div
+            class="w-2 h-2 bg-bright-teal rounded-full mt-2 mr-3 flex-shrink-0"
+          ></div>
+          <span class="text-light">Preparação para o exame de certificação CCNA 200-301</span>
+        </li>
+        <li class="flex items-start">
+          <div
+            class="w-2 h-2 bg-bright-teal rounded-full mt-2 mr-3 flex-shrink-0"
+          ></div>
+          <span class="text-light">Metodologia com aulas teóricas e práticas para fixação do conhecimento</span>
+        </li>
+      </ul>
+      <button
+        class="btn-primary text-white px-8 py-4 rounded-lg font-semibold text-lg"
+      >
+        INSCREVER-SE AGORA
+      </button>
+    </div>
+    <div>
+      <div class="grid grid-cols-3 gap-4 max-w-md mx-auto">
+        <!-- Duas imagens em cima -->
+        <div class="col-span-1">
+          <img
+            src="./images/cisco.jpg"
+            alt="Network Setup"
+            class="w-full h-36 object-cover rounded-xl hover-lift shadow-lg"
+          />
+        </div>
+        <div class="col-span-1">
+          <img
+            src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=200&h=150&fit=crop"
+            alt="Server Room"
+            class="w-full h-36 object-cover rounded-xl hover-lift shadow-lg"
+          />
+        </div>
+
+        <!-- Imagem vertical do lado direito -->
+        <div class="col-span-1 row-span-2">
+          <img
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=320&fit=crop"
+            alt="Data Center Vertical"
+            class="w-full h-72 object-cover rounded-xl hover-lift shadow-lg"
+          />
+        </div>
+
+        <!-- Duas imagens em baixo -->
+        <div class="col-span-1">
+          <img
+            src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=200&h=150&fit=crop"
+            alt="Network Monitoring"
+            class="w-full h-32 object-cover rounded-xl hover-lift shadow-lg"
+          />
+        </div>
+        <div class="col-span-1">
+          <img
+            src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=200&h=150&fit=crop"
+            alt="IT Professional"
+            class="w-full h-32 object-cover rounded-xl hover-lift shadow-lg"
+          />
         </div>
       </div>
-    </section>
+
+      <!-- Overlay decorativo -->
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-teal-500/5 to-blue-500/5 rounded-2xl blur-3xl -z-10"
+      ></div>
+    </div>
+  </div>
+</section>
 
     <!-- Our Process Section -->
-    <section class="py-16 px-4 md:px-8">
+<section class="py-16 px-4 md:px-8">
   <div class="max-w-5xl mx-auto">
     <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
-      Nosso <span class="gradient-text">Processo</span>
+      Nossa <span class="gradient-text">Metodologia</span>
     </h2>
 
     <!-- Process Steps with connecting lines -->
@@ -701,23 +754,23 @@
       <div class="grid md:grid-cols-3 gap-8 relative z-10">
         <div class="text-center px-2 sm:px-4">
           <div class="text-6xl font-bold text-light-gray mb-8">01</div>
+          <h3 class="text-xl font-bold text-white mb-4">Aulas Teóricas</h3>
           <p class="text-light leading-relaxed">
-            Conheça os principais dispositivos de rede e suas funções na
-            comunicação entre sistemas, funções na comunicação.
+            Explanações expositivo-dialogadas com exemplificação e discussões dos assuntos inerentes ao curso, proporcionando base sólida nos fundamentos de redes.
           </p>
         </div>
         <div class="text-center px-2 sm:px-4">
           <div class="text-6xl font-bold text-light-gray mb-8">02</div>
+          <h3 class="text-xl font-bold text-white mb-4">Aulas Práticas</h3>
           <p class="text-light leading-relaxed">
-            Conheça os principais dispositivos de rede e suas funções na
-            comunicação entre sistemas, funções na comunicação.
+            Utilização da bibliografia apresentada com desenvolvimento de atividades e projetos individuais e em grupo para fixação da teoria, usando equipamentos reais e Cisco Packet Tracer.
           </p>
         </div>
         <div class="text-center px-2 sm:px-4">
           <div class="text-6xl font-bold text-light-gray mb-8">03</div>
+          <h3 class="text-xl font-bold text-white mb-4">Projetos Integradores</h3>
           <p class="text-light leading-relaxed">
-            Conheça os principais dispositivos de rede e suas funções na
-            comunicação entre sistemas, funções na comunicação.
+            Implementação de projetos que combinam todos os conhecimentos adquiridos: configuração de redes completas com switches, roteadores, servidores e firewalls.
           </p>
         </div>
       </div>
@@ -725,17 +778,14 @@
   </div>
 </section>
 
-
-
     <!-- CTA Section -->
-    <section
+<section
   class="flex items-center justify-center px-4 py-20 relative overflow-hidden"
 >
   <div class="container mx-auto max-w-5xl relative z-10">
     <!-- Call to Action Card -->
     <div
-      class="relative rounded-3xl shadow-2xl overflow-hidden mb-20 
-             h-80 sm:h-96 md:h-72 lg:h-64 desktop-card mobile-card"
+      class="relative rounded-3xl shadow-2xl overflow-hidden mb-20 h-80 sm:h-96 md:h-72 lg:h-64 desktop-card mobile-card"
     >
       <!-- Background verde que ocupa toda a área (apenas desktop) -->
       <div
@@ -744,27 +794,21 @@
 
       <!-- Conteúdo do CTA -->
       <div
-        class="relative z-10 p-6 sm:p-8 md:p-10 lg:p-16 max-w-full md:max-w-2xl 
-               text-center md:text-left flex flex-col items-center md:items-start 
-               justify-center h-full"
+        class="relative z-10 p-6 sm:p-8 md:p-10 lg:p-16 max-w-full md:max-w-2xl text-center md:text-left flex flex-col items-center md:items-start justify-center h-full"
       >
         <h1
-          class="text-2xl sm:text-3xl md:text-3xl lg:text-3xl font-bold 
-                 leading-snug break-words 
-                 text-[#00bfa5] md:text-white"
+          class="text-2xl sm:text-3xl md:text-3xl lg:text-3xl font-bold leading-snug break-words text-[#00bfa5] md:text-white"
         >
-          Torna-te um Especialista <br />
-          em Redes com o CCNA <br />
-          Aprendendo do Jeito ✓
+          Domina as Redes de Computadores <br />
+          com Certificação CCNA do Jeito ✓
         </h1>
 
         <!-- Botão mobile (visível apenas em telas pequenas) -->
-        <div class="mobile-button-container md:hidden mt-6 flex justify-center">
+        <div
+          class="mobile-button-container md:hidden mt-6 flex justify-center"
+        >
           <button
-            class="mobile-button bg-gradient-to-r from-bright-teal to-teal-600 
-                   text-white px-6 py-3 rounded-xl font-bold 
-                   text-base sm:text-lg 
-                   hover:shadow-xl hover:scale-105 transition-all duration-300"
+            class="mobile-button bg-gradient-to-r from-bright-teal to-teal-600 text-white px-6 py-3 rounded-xl font-bold text-base sm:text-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
           >
             INSCREVER-SE AGORA
           </button>
@@ -777,193 +821,246 @@
       >
         <!-- Container interno para alinhar o botão -->
         <div class="flex items-center justify-center h-full p-10 lg:p-16">
-          <button
-            class="gradient-button text-white px-4 py-3 md:px-5 md:py-3 lg:px-6 lg:py-4 
-                   rounded-xl font-bold text-base md:text-lg lg:text-lg 
-                   hover:shadow-xl hover:scale-105 transition-all duration-300"
-          >
-            INSCREVER-SE AGORA
-          </button>
+          <div class="text-center">
+
+            <button
+              class="gradient-button text-white px-4 py-3 md:px-5 md:py-3 lg:px-6 lg:py-4 rounded-xl font-bold text-base md:text-lg lg:text-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+            >
+              INSCREVER-SE AGORA
+            </button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-
-
-
-
     <!-- FAQ Section -->
-    <section class="py-16 px-4 md:px-8">
-      <div class="max-w-5xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
-          Perguntas <span class="gradient-text">Frequentes.</span>
-        </h2>
-        <div class="space-y-4">
-          <div class="accordion-item">
-            <button
-              class="accordion-button w-full text-left py-6 px-6 bg-dark-teal rounded-lg flex justify-between items-center"
-              onclick="toggleAccordion(this)"
-            >
-              <span class="font-semibold">1. O que é a certificação CCNA?</span>
-              <svg
-                class="w-6 h-6 transform transition-transform"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
-            </button>
-            <div
-              class="accordion-content hidden px-6 pt-4 pb-6 text-light-gray"
-            >
-              <p>
-                O CCNA (Cisco Certified Network Associate) é uma certificação
-                reconhecida mundialmente que valida habilidades em redes de
-                computadores, incluindo configuração de roteadores e switches,
-                implementação de protocolos de rede, e resolução de problemas de
-                conectividade. Esta certificação é essencial para profissionais
-                que desejam trabalhar com infraestrutura de redes e é amplamente
-                reconhecida por empregadores em todo o mundo.
-              </p>
-            </div>
-          </div>
+<section class="py-16 px-4 md:px-8">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+      Perguntas <span class="gradient-text">Frequentes</span>
+    </h2>
+    <div class="space-y-4">
+      <div class="accordion-item">
+        <button
+          class="accordion-button w-full text-left py-6 px-6 bg-dark-teal rounded-lg flex justify-between items-center"
+          onclick="toggleAccordion(this)"
+        >
+          <span class="font-semibold">1. Qual é a duração total da formação CCNA?</span>
+          <svg
+            class="w-6 h-6 transform transition-transform"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="accordion-content hidden px-6 pt-4 pb-6 text-light-gray"
+        >
+          <p>
+            A formação tem uma carga horária total de <strong>96 horas</strong>, distribuídas entre aulas teóricas e práticas para garantir um aprendizado completo e aprofundado.
+          </p>
+        </div>
+      </div>
 
-          <div class="accordion-item">
-            <button
-              class="accordion-button w-full text-left py-6 px-6 bg-dark-teal rounded-lg flex justify-between items-center"
-              onclick="toggleAccordion(this)"
-            >
-              <span class="font-semibold"
-                >2. Qual é o exame atual para o CCNA?</span
-              >
-              <svg
-                class="w-6 h-6 transform transition-transform"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
-            </button>
-            <div
-              class="accordion-content hidden px-6 pt-4 pb-6 text-light-gray"
-            >
-              <p>
-                O exame atual é o CCNA 200-301, que cobre uma ampla gama de
-                tópicos fundamentais de redes.
-              </p>
-            </div>
-          </div>
+      <div class="accordion-item">
+        <button
+          class="accordion-button w-full text-left py-6 px-6 bg-dark-teal rounded-lg flex justify-between items-center"
+          onclick="toggleAccordion(this)"
+        >
+          <span class="font-semibold">2. Quem é o público-alvo deste curso?</span>
+          <svg
+            class="w-6 h-6 transform transition-transform"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="accordion-content hidden px-6 pt-4 pb-6 text-light-gray"
+        >
+          <p>
+            Profissionais de TI, técnicos e gestores de redes e data centers, gestores de bases de dados, estudantes de informática, engenharia informática e telecomunicações, e qualquer profissional que deseje adquirir conhecimentos na área de TICs.
+          </p>
+        </div>
+      </div>
 
-          <div class="accordion-item">
-            <button
-              class="accordion-button w-full text-left py-6 px-6 bg-dark-teal rounded-lg flex justify-between items-center"
-              onclick="toggleAccordion(this)"
-            >
-              <span class="font-semibold"
-                >3. Quanto tempo leva para se preparar para o CCNA?</span
-              >
-              <svg
-                class="w-6 h-6 transform transition-transform"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
-            </button>
-            <div
-              class="accordion-content hidden px-6 pt-4 pb-6 text-light-gray"
-            >
-              <p>
-                O tempo de preparação varia conforme sua experiência prévia, mas
-                geralmente leva de 3 a 6 meses de estudo dedicado.
-              </p>
-            </div>
-          </div>
+      <div class="accordion-item">
+        <button
+          class="accordion-button w-full text-left py-6 px-6 bg-dark-teal rounded-lg flex justify-between items-center"
+          onclick="toggleAccordion(this)"
+        >
+          <span class="font-semibold">3. Quais equipamentos são utilizados nas aulas práticas?</span>
+          <svg
+            class="w-6 h-6 transform transition-transform"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="accordion-content hidden px-6 pt-4 pb-6 text-light-gray"
+        >
+          <p>
+            Utilizamos equipamentos Cisco reais, incluindo switches, roteadores, servidores e firewalls, além do software Cisco Packet Tracer para simulações de rede.
+          </p>
+        </div>
+      </div>
 
-          <div class="accordion-item">
-            <button
-              class="accordion-button w-full text-left py-6 px-6 bg-dark-teal rounded-lg flex justify-between items-center"
-              onclick="toggleAccordion(this)"
-            >
-              <span class="font-semibold"
-                >4. Quais são os pré-requisitos para o CCNA?</span
-              >
-              <svg
-                class="w-6 h-6 transform transition-transform"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
-            </button>
+      <div class="accordion-item">
+        <button
+          class="accordion-button w-full text-left py-6 px-6 bg-dark-teal rounded-lg flex justify-between items-center"
+          onclick="toggleAccordion(this)"
+        >
+          <span class="font-semibold">4. O curso aborda tanto IPv4 quanto IPv6?</span>
+          <svg
+            class="w-6 h-6 transform transition-transform"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="accordion-content hidden px-6 pt-4 pb-6 text-light-gray"
+        >
+          <p>
+            Sim, o curso cobre profundamente ambos os protocolos. Inclui planeamento de sub-redes com endereçamento IPv4 (FLSM & VLSM) e IPv6, além da configuração de roteamento estático e dinâmico em ambos os protocolos.
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button
+          class="accordion-button w-full text-left py-6 px-6 bg-dark-teal rounded-lg flex justify-between items-center"
+          onclick="toggleAccordion(this)"
+        >
+          <span class="font-semibold">5. Quais tópicos de segurança são abordados no curso?</span>
+          <svg
+            class="w-6 h-6 transform transition-transform"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="accordion-content hidden px-6 pt-4 pb-6 text-light-gray"
+        >
+          <p>
+            O curso aborda fundamentos de segurança, a trindade AAA (Autenticação, Autorização e Contabilidade), controlo de acesso, listas de controle de acesso (ACLs), segurança em redes sem fios (WPA e WPA2), e segurança para dispositivos da Camada 2 do modelo OSI.
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button
+          class="accordion-button w-full text-left py-6 px-6 bg-dark-teal rounded-lg flex justify-between items-center"
+          onclick="toggleAccordion(this)"
+        >
+          <span class="font-semibold">6. O curso prepara para o exame de certificação CCNA 200-301?</span>
+          <svg
+            class="w-6 h-6 transform transition-transform"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="accordion-content hidden px-6 pt-4 pb-6 text-light-gray"
+        >
+          <p>
+            Sim, este curso é especificamente desenhado para preparar os alunos para o exame CCNA 200-301, cobrindo todos os tópicos exigidos pela certificação.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-[linear-gradient(90deg,#043545_5%,#047A9F_50%,#043545_100%)] text-white p-6"
+    >
+      <div class="container mx-auto">
+        <div class="grid gric-cols-1 lg:grid-cols-6 px-5">
+          <div class="col-span-1 lg:flex lg:items-center h-1/1">
+            <img
+              src="./images/logo.png"
+              alt="Mechanical Academy"
+              class="w-40"
+            />
+          </div>
+          <div class="col-span-1 lg:col-span-5 flex flex-col">
             <div
-              class="accordion-content hidden px-6 pt-4 pb-6 text-light-gray"
+              class="w-full flex flex-col md:flex-row justify-between border-b pb-5 mb-5 border-b-gray-800"
             >
-              <p>
-                Não há pré-requisitos formais para o CCNA, mas é recomendado ter
-                conhecimentos básicos de redes e informática.
-              </p>
+              <div class="flex flex-col md:flex-row gap-5 mt-5">
+                <a href="#">Inicio</a>
+                <a href="#">Cursos</a>
+                <a href="#">Termos & Condicoes</a>
+                <a href="#">Politicas de Privacidade</a>
+              </div>
+              <div class="flex items-center gap-5 mt-5">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-x-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-youtube"></i>
+              </div>
             </div>
+            <p class="text-center lg:text-left">
+              Mechanical Academy © 2025 Todos os direitos reservados.
+              Desenvolvido do Jeito <span class="text-2xl">✓</span> pela
+              <a href="https://mechanical.co.mz" class="text-custom-orange-1"
+                >Mechanical Tecnologia.</a
+              >
+            </p>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Footer -->
-   <footer class="bg-[linear-gradient(90deg,#043545_5%,#047A9F_50%,#043545_100%)] text-white p-6">
-        <div class="container mx-auto">
-            <div class="grid gric-cols-1 lg:grid-cols-6 px-5">
-                <div class="col-span-1 lg:flex lg:items-center h-1/1">
-                    <img src="./images/logo.png" alt="Mechanical Academy" class="w-40">
-                </div>
-                <div class="col-span-1 lg:col-span-5 flex flex-col">
-                    <div class="w-full flex flex-col md:flex-row justify-between border-b pb-5 mb-5 border-b-gray-800">
-                        <div class="flex flex-col md:flex-row gap-5 mt-5">
-                            <a href="#">Inicio</a>
-                            <a href="#">Cursos</a>
-                            <a href="#">Termos & Condicoes</a>
-                            <a href="#">Politicas de Privacidade</a>
-                        </div>
-                        <div class="flex items-center gap-5 mt-5">
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-x-twitter"></i>
-                            <i class="fab fa-linkedin-in"></i>
-                            <i class="fab fa-youtube"></i>
-                        </div>
-                    </div>
-                    <p class="text-center lg:text-left">Mechanical Academy © 2025 Todos os direitos reservados. Desenvolvido do Jeito <span
-                            class="text-2xl">✓</span> pela <a href="https://mechanical.co.mz"
-                            class="text-custom-orange-1">Mechanical Tecnologia.</a></p>
-                </div>
-            </div>
-        </div>
-    </footer>
+          
+    </footer>
 
     <script src="js/script.js"></script>
   </body>
